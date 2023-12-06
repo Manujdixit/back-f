@@ -10,7 +10,7 @@ const ShowBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://books-b-d.onrender.com/books/${id}`)
+      .get(`https://books-b-d.onrender.com/notes/${id}`)
       .then((response) => {
         setBook(response.data);
         setLoading(false);
